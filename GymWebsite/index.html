@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym.jpg');
+        color: white;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+
+        position: absolute;
+        left: 40px;
+        top: 11px;
+
+
+    }
+
+    .left img {
+        width: 110px;
+        filter: invert(100%);
+        margin-bottom: -40px;
+    }
+
+    .left div {
+        line-height: 15px;
+        font-size: 26px;
+        text-align: center;
+
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid orange; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 35px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 12px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #34e96a;
+    }
+
+
+    .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 0px 14px;
+        border: 2px solid grey;
+        border-radius: 25px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(107, 104, 104);
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 120px 38px;
+        padding: 40px;
+        width: 36%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhaina 2';
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 2px;
+        margin: 11px auto;
+        border: 2px solid black;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .container button {
+        display: block;
+        width: 84%;
+        margin: 11px auto;
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box is for Logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="Logo">
+            <div>RJ FITNESS</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#">Fitness Calculaor</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Delhi Now </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Entre Your Name ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Entre Your Age ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Entre Your Gender ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Entre Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Mobile Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
