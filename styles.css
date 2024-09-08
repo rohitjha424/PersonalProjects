@@ -1,35 +1,95 @@
-*{
-    background-color: #333333 ;
-    
+* {
+  background-color: #333333;
 }
-body{
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
   color: white;
 }
-.main-h{
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .main-h{
     display: flex;
     justify-content: center;
+} */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid gray;
+  width: 90%;
 }
-.content{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+.tiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
-.tiles{
-    display: flex;
-    flex-direction: row;
+.list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* cursor: pointer; */
+  padding: 10px;
+  margin: 10px;
+  width: 13%;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+.list-items p {
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+
 }
 
-.list-items a{
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    background-color: gray;
+.list-items a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  
 }
-.list-items-btn{
-    background-color: gray;
-    margin: 10px;
-    padding: 10px;
-    align-content: center;
+.list-items:hover {
+  
+    /* color: white;
+    background-color: black; */
+    transform: scale(1.1);
     
+  }
+/* .list-items:hover {
+  
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+    
+  }
+  .list-items:hover .list-items a{
+    color: white;
+    background-color: black;
+  } */
+
+.list-items-btn {
+  background-color: gray;
+  margin: 10px;
+  padding: 10px 15px !important;
+  align-content: center;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
 }
