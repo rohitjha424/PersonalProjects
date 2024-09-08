@@ -1,0 +1,35 @@
+*{
+    background-color: #333333 ;
+    
+}
+body{
+  justify-content: center;
+  color: white;
+}
+.main-h{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.tiles{
+    display: flex;
+    flex-direction: row;
+}
+
+.list-items a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+.list-items-btn{
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    align-content: center;
+    
+}
