@@ -1,0 +1,324 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+} */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+
+footer {
+    /* background: #333; */
+    color: #61dafb;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+#fs-content:fullscreen {
+    /* Ensure content div takes up the full screen */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    /* Center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#fs-note{
+   
+    color:#282c34;
+}
+
+/* footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #61dafb;
+} */
+
+.container {
+    text-align: center;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+#home-greeting{
+    color: #fff500;
+margin-top: 0px;
+}
+#navbar-logo{
+    display: block;
+    margin-bottom: 15px;
+}
+#logo {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 97px 97px;
+ 
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 200px;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.buttons .btn, .options .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons .btn:hover, .options .btn:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+.options .btn:active, .buttons .btn:active {
+    transform: scale(0.95);
+}
+
+.options input {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #61dafb;
+    background-color: #282c34;
+    color: white;
+}
+
+.options input::placeholder {
+    color: #aaa;
+}
+
+#music-controls {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#music-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.music-icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    position: absolute;
+}
+
+#play-icon {
+    display: block;
+}
+
+#pause-icon {
+    display: none;
+}
+
+#music-status-text {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #61dafb;
+}
+
+#music-status {
+    position: fixed;
+    bottom: 60px;
+    left: 10px;
+    font-size: 18px;
+    color: #61dafb;
+}
+
+.music-selection {
+    margin: 20px 0;
+}
+
+.music-selection label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#music-select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #61dafb;
+    background-color: #282c34;
+    color: white;
+}
+
+#music-select option {
+    background-color: #282c34;
+    color: white;
+}
+
+#set-music {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#set-music:hover {
+    background-color: #4faadc;
+}
+
+@media only screen and (max-width: 400px) and (min-width: 200px) {
+    body {
+        justify-content: flex-start;
+    }
+#navbar-logo{
+    display: flex;
+}
+    #logo {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 10px 10px;
+    }
+
+    .buttons .btn, .options .btn {
+        font-size: 13px;
+    }
+    /* .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .options .btn, .buttons .btn {
+        width: 43%;
+        margin: 5px 2.5px;
+        padding: 10px;
+    }
+.mb-btn{
+    width: 44% !important;
+}
+    .options input {
+        font-size: 12px;
+        padding: 8px 5px;
+        margin: 10px 5px 5px 5px;
+        width: 38%;
+
+    }
+
+    #timer {
+        font-size: 85px;
+    }
+    #music-select{
+        font-size: 14px;
+    }
+    #set-music {
+        font-size: 13px;
+    }
+
+    .music-op {
+        margin-top: 5px;
+    }
+
+    #music-status {
+        font-size: 14px;
+        bottom: 80px;
+        position: static;
+    }
+
+    #music-controls {
+        bottom: 20px;
+        left: 10px;
+    }
+
+    #music-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .music-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    #music-status-text {
+        font-size: 14px;
+    }
+
+    #fs-content:fullscreen {
+        /* Ensure content div takes up the full screen */
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        /* Center the content */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    #fs-note{
+   
+        font-size: 14px;
+    }
+}

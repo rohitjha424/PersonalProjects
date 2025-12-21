@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+    <div id="navbar-logo">
+        <img src="Assets/Icons_Logos/CatLogo.png" alt="Logo" id="logo">
+        
+    </div>
+
+        <h3 id="home-greeting">Hello from Meow-Meow StopWatch &#128570; !!!</h3>
+        <div class="options">
+            <button class="btn" onclick="setPreset(30)">30 Minutes</button>
+            <button class="btn" onclick="setPreset(60)">60 Minutes</button>
+                <input type="number" id="custom-time" placeholder="Set Custom Time (min)">
+                <button class="btn" onclick="setCustomTime()">Set Time</button>
+        </div>
+        <div id="fs-content">
+
+            <div id="timer">00:00:00</div>
+            <div class="buttons">
+                <button id="start" class="btn mb-btn">Start</button>
+                <button id="reset" class="btn mb-btn">Reset</button>
+                <button id="fullscreen-btn" class="btn mb-btn">Fullscreen</button>
+            </div>
+            <div >
+                <p id="fs-note">Note: To set a new time, Go back to main content ...</p>
+
+            </div>
+        </div>
+        
+        <div class="container">
+            <!-- Existing Timer Display and Buttons -->
+        
+            <div class="music-selection">
+                <label for="music-select">Select Music:</label>
+                <div class="music-op">
+
+              
+                <select id="music-select">
+                    <option value="Magical-Moments.mp3">Magical Moments</option>
+                    <option value="Beauty.mp3">Beauty</option>
+                    <option value="Morning-Routine-Lofi-Study-Music.mp3">Morning-Routine</option>
+                    <option value="Keys-of-Moon-White-Petals.mp3">Keys-of-Moon-White-Petals</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <button id="set-music" class="btn">Set Music</button>
+            </div>
+            </div>
+        
+            <!-- Existing Music Controls and Status -->
+        </div>
+        
+        <audio id="background-music" src="Assets/timer_bg_music/Magical-Moments.mp3"></audio>
+        
+        <div id="music-status"></div>
+        <audio id="background-music" src="Assets/timer_bg_music/Magical-Moments.mp3" loop></audio>
+        <div id="music-controls">
+            <button id="music-toggle" class="btn">
+                <img id="play-icon" src="Assets/Icons_Logos/play.png" class="music-icon" alt="Play Music">
+                <img id="pause-icon" src="Assets/Icons_Logos/pause.png" class="music-icon" alt="Pause Music">
+            </button>
+            <span id="music-status-text">Play Music</span>
+        </div>
+    </div>
+    <footer>
+            <p><a href="https://www.linkedin.com/in/rohitjha242" style="text-decoration: none;" target="_blank">Developed by RJ</a> &#128150;</p>  
+    </footer>
+
+    <script src="script.js"></script>
+
+</div>
+</body>
+
+
+</html>
+
