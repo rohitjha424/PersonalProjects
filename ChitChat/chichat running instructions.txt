@@ -1,0 +1,6 @@
+1)Run the live server for index.html file
+
+2)open terminal 
+
+Run>> nodemon .\index.js
+
